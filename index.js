@@ -32,7 +32,6 @@ inquirer.prompt([
         type: "list",
         name: "license",
         message: "Which license is used?",
-        
         choices: ["None", "Apache", "MIT", "ISC", "Creative Commons", "Eclipse", "The Unilicense"],
         validate: (value) => {
             if (value) { return true } else { return "Please choose a license for repo" }
@@ -62,6 +61,7 @@ inquirer.prompt([
     .then(answers => {
         fs.writeFileSync("README.md", `
 # ${answers.title}
+![${answers.license}](https://img.shields.io/badge/license-${answers.license}-brightgreen)
 
 # Description
 ${answers.description}
