@@ -29,9 +29,13 @@ inquirer.prompt([
         name: "usage"
     },
     {
-        type: "input",
+        type: "list",
+        name: "license",
         message: "Which license is used?",
-        name: "license"
+        choices: ["None", "Apache", "MIT", "Boost", "Creative Commons", "Eclipse", "The Unilicense"],
+        validate: (value) => {
+            if (value) { return true } else { return "Please choose a license for repo"}
+        }
     },
     {
         type: "input",
