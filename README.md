@@ -19,7 +19,8 @@ Clone repository. Note that node.js will be required.
 # Usage
 Use node.js to invoke. The user then answers the questions with which they are prompted. The app then provides a README.md file filled out with the user's information.
 
-# Video Demo: https://drive.google.com/file/d/1xoahCdV1-s1maVO3CZ7yeQ8V5adnO4Cu/view?usp=share_link
+# Video Demo: 
+https://drive.google.com/file/d/1xoahCdV1-s1maVO3CZ7yeQ8V5adnO4Cu/view?usp=share_link
 
 # License
 None
