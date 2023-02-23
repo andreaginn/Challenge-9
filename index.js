@@ -32,7 +32,8 @@ inquirer.prompt([
         type: "list",
         name: "license",
         message: "Which license is used?",
-        choices: ["None", "Apache", "MIT", "Boost", "Creative Commons", "Eclipse", "The Unilicense"],
+        
+        choices: ["None", "Apache", "MIT", "ISC", "Creative Commons", "Eclipse", "The Unilicense"],
         validate: (value) => {
             if (value) { return true } else { return "Please choose a license for repo" }
         }
@@ -64,7 +65,6 @@ inquirer.prompt([
 
 # Description
 ${answers.description}
-[![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-yellow.svg)](https://opensource.org/licenses/${answers.license})
 
 # Table of Contents
 * [Installation](#installation)
