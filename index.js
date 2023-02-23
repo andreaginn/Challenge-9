@@ -85,24 +85,10 @@ ${answers.contributions}
 ${answers.tests}
 
 # Questions
-${answers.github}
-${answers.email}
+Contact me with questions at GitHub: https://github.com/${answers.github}
+Or email me at ${answers.email}
 
 `)
     })
 
 
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-
-
-
-
-}
-
-// TODO: Create a function to initialize app
-function init() { }
-
-// Function call to initialize app
-init();
